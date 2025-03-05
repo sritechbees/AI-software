@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination} from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,11 +15,11 @@ const Testimonial = () => {
       image: "/testimonial/aswinn.png",
     },
     {
-        name: "Aswath",
-        feedback:
-          "The AI-powered drone surveillance system has significantly improved our security. Real-time monitoring is a game changer!",
-        image: "/testimonial/aswath-profile.png",
-      },
+      name: "Aswath",
+      feedback:
+        "The AI-powered drone surveillance system has significantly improved our security. Real-time monitoring is a game changer!",
+      image: "/testimonial/aswath-profile.png",
+    },
     {
       name: "Naresh",
       feedback:
@@ -27,11 +27,11 @@ const Testimonial = () => {
       image: "/testimonial/Nareshnew-profile.png",
     },
     {
-        name: "Ruban",
-        feedback:
-          "The AI-powered drone surveillance system has significantly improved our security. Real-time monitoring is a game changer!",
-        image: "/testimonial/ruban-profile.png",
-      },
+      name: "Ruban",
+      feedback:
+        "The AI-powered drone surveillance system has significantly improved our security. Real-time monitoring is a game changer!",
+      image: "/testimonial/ruban-profile.png",
+    },
     {
       name: "Prasanth",
       feedback:
@@ -39,11 +39,11 @@ const Testimonial = () => {
       image: "/testimonial/prasanth-profile.png",
     },
     {
-        name: "Jaiprakash",
-        feedback:
-          "The AI-powered drone surveillance system has significantly improved our security. Real-time monitoring is a game changer!",
-        image: "/testimonial/jai-prakash-profile.png",
-      },
+      name: "Jaiprakash",
+      feedback:
+        "The AI-powered drone surveillance system has significantly improved our security. Real-time monitoring is a game changer!",
+      image: "/testimonial/jai-prakash-profile.png",
+    },
   ];
 
   return (
@@ -56,7 +56,6 @@ const Testimonial = () => {
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
-        
         className="w-full max-w-6xl mx-auto"
       >
         {reviews.map((review, index) => (
@@ -72,7 +71,7 @@ const Testimonial = () => {
                 style={{ backgroundImage: `url(${review.image})` }}
               ></div>
               <h3 className="text-xl font-semibold mb-2">{review.name}</h3>
-              <p className="text-gray-300">"{review.feedback}"</p>
+              <p className="text-gray-300">&quot;{review.feedback}&quot;</p>
             </motion.div>
           </SwiperSlide>
         ))}
