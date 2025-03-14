@@ -5,7 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { GiDeliveryDrone, GiCctvCamera } from 'react-icons/gi';
 import { FaSatellite, FaVideo, FaImage, FaMicrochip, FaShieldAlt, FaRobot, FaNetworkWired, FaCloud, FaDatabase, FaCogs } from 'react-icons/fa';
-
+import App_layout from '@/component/layout/app_layout';
+import Head from "next/head"
 const features = [
   { icon: <GiDeliveryDrone size={50} />, title: 'Drones', desc: 'AI-powered drone surveillance and analytics.' },
   { icon: <GiCctvCamera size={50} />, title: 'CCTV', desc: 'Real-time video monitoring and threat detection.' },
@@ -27,8 +28,12 @@ function Features() {
   }, []);
 
   return (
+    <App_layout>
+       <Head>
+              <title>Ai Software |  Features</title>
+            </Head>
     <div className='bg-gradient-to-b from-blue-600 via-purple-600 to-black'>
-      <div className="relative text-white min-h-screen max-w-6xl mx-auto flex flex-col items-center justify-center p-8">
+      <div className="relative text-white min-h-screen max-w-7xl mx-auto flex flex-col items-center justify-center p-8">
         <h2 className="text-4xl font-bold mb-6 text-center" data-aos="fade-down">AI Software Features</h2>
         <p className="text-lg text-gray-300 text-center mb-12 max-w-3xl" data-aos="fade-up">
           Our AI software integrates cutting-edge technology for security, surveillance, and analytics, ensuring high efficiency and reliability.
@@ -49,6 +54,7 @@ function Features() {
         <div className="absolute top-0 left-0 w-full h-full bg-[url('/sky.jpg')] opacity-10 bg-cover"></div>
       </div>
     </div>
+    </App_layout>
   );
 }
 

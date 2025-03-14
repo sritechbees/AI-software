@@ -1,21 +1,25 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="bg-gray-900 bg-opacity-80 backdrop-blur-md top-0 w-full text-white py-4 px-8 flex items-center justify-between shadow-md">
+    <header className="bg-gray-900 bg-opacity-80 backdrop-blur-md top-0 fixed left-0 w-full text-white py-4 px-8 flex items-center justify-between shadow-md transition-all duration-300 z-50">
       {/* Logo */}
-      <div className="text-2xl font-bold">
-        <Link href="/">
-          <span className="text-blue-500">Drone</span>Vision
-        </Link>
-      </div>
-      
+      <Link href="/">
+        <Image 
+          src="/about/aibrain1.png" // Replace with actual logo path
+          alt="DroneVision Logo" 
+          width={40} 
+          height={40} 
+          className="w-24 h-16"
+        />
+      </Link>
       {/* Navigation */}
       <nav>
         <ul className="flex space-x-6">
           <li>
-            <Link href="/about" className="hover:text-blue-400 transition">
+            <Link href="/about_us/about" className="hover:text-blue-400 transition">
               About
             </Link>
           </li>

@@ -51,9 +51,12 @@ const HowItWorks = () => {
               <p className="text-gray-900 group-hover:text-white">{step.description}</p>
             </div>
           </motion.div>
+          
         ))}
       </div>
+      
     </section>
+    
   );
 };
 
