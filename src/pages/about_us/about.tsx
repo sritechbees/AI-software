@@ -4,6 +4,7 @@ import Aboutone from "@/component/common/aboutone";
 import AboutTwo from "@/component/common/abouttwo";
 import App_layout from "@/component/layout/app_layout";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function About() {
   const logos = [
@@ -35,9 +36,9 @@ export default function About() {
               className="flex-shrink-0 mx-36"
               style={{ width: "200px", height: "200px" }}
             >
-              <img
+              <Image
                 src={logo.image}
-                alt={logo.name}
+                alt={logo.name} height={200} width={200}
                 className="w-full h-full object-contain"
               />
             </div>

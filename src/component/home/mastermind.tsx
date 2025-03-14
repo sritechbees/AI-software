@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaSatelliteDish, FaChartLine, FaCloudUploadAlt, FaRobot, FaMicrochip, FaShieldAlt, FaNetworkWired } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 function Mastermind() {
